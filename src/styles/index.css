@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-carbon text-ash antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  @apply bg-ember/30;
+}
+
+/*
+ * Carruseles horizontales de recetas (Home): scroll nativo con swipe,
+ * sin scrollbar visible y sin librerías externas.
+ */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Edge legacy / IE */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge (Chromium) */
+  width: 0;
+  height: 0;
+}
+
+

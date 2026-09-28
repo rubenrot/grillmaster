@@ -1,0 +1,21 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.idea
+*.log
+*.tsbuildinfo
+
+# Artefactos compilados de la config de Vite (generados por tsc a partir
+# de vite.config.ts; no forman parte del código fuente).
+vite.config.js
+vite.config.d.ts
+
+# Servidor GrillMaster API (backend opcional)
+grillmaster/node_modules
+grillmaster/dist
+grillmaster/.env
+
+# Fuentes de conocimiento con copyright (nunca se suben al repo)
+data/knowledge/sources
